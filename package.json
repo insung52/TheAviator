@@ -1,0 +1,24 @@
+{
+  "name": "theaviator",
+  "version": "1.0.0",
+  "description": "Demos and game for the tutorial \"The Making of 'The Aviator': Animating a Basic 3D Scene with Three.js\", by Karim Maaloul.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insung52/TheAviator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insung52/TheAviator/issues"
+  },
+  "homepage": "https://github.com/insung52/TheAviator#readme",
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "three": "^0.183.2"
+  }
+}

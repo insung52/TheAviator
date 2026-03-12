@@ -11,14 +11,32 @@
 		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/game.css" />
-		<script type="text/javascript" src="js/TweenMax.min.js"></script>
-		<script type="text/javascript" src="js/three.min.js"></script>
-		<script type="text/javascript" src="js/game.js" /></script>
+		
+		
+
+		
 		<!--[if IE]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body>
+		
+		<!--importmap 안쓰고, js 파일 자체에 직접 경로 지정해도 되는데, 그 때마다 저런 상대경로 쓰기 싫으니까 아래처럼 쓰는 것 -->
+		<script type="importmap">
+			{
+					"imports": {
+						"three": "./node_modules/three/build/three.module.js",
+						"addons/": "./node_modules/three/examples/jsm/"
+					}
+			}
+		</script>
+		<!--모듈을 가져왔기때문에 javascript > module-->
+		<script type="module" src="js/TweenMax.min.js"></script>
+		<!--<script type="text/javascript" src="js/three.min.js"></script>-->
+		<script type="module" src="js/game.js"></script>
+
+
+
 		<div class="game-holder" id="gameHolder">
 			<div class="header">
 				<h1><span>the</span>Aviator</h1>
